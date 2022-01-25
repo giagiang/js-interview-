@@ -65,10 +65,41 @@
 
 // cách 2 
 // giải bằng đệ quy 
-function giaiThua(number){
-    if ( number > 0 ){
-        return number * giaiThua(number - 1);
+// function giaiThua(number){
+//     if ( number > 0 ){
+//         return number * giaiThua(number - 1);
+//     }
+//     return 1;
+// }
+// console.log(giaiThua(6));
+
+
+function run (x,y ){
+    if ( x > y -1 ){
+        return [];        
     }
-    return 1;
+    return [(x + 1), ...run(x + 1, y)];
+    // x:5 ,  [6 ...run(6 , 10)]
+         //x:6   [7, ...run(7, 10)]
+            //x:7  [8, ..run(8, 10) ]
+                //x:8  [9, ..run(9, 10) ]
+                //x:9  [10 , run(10,10) == []]
+                  
+    
 }
-console.log(giaiThua(6));
+
+
+function run (x,y ){
+    if ( x > y -1 ){
+        return [];        
+    }
+    return [(x + 1), ...run(x + 1, y)];
+    // x:5 ,  [6 ...run(6 , 10)]
+         //x:6   [7, ...run(7, 10)]
+            //x:7  [8, ..run(8, 10) ]
+                //x:8  [9, ..run(9, 10) ]
+                //x:9  [10 , run(10,10) == []]
+                  
+    
+
+// console.log(run(5,10));
