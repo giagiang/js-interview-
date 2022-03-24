@@ -10,29 +10,51 @@
 var courses = [
     {
         id: 1,
-        name: 'php ',
-        coin : 3000 
+        name: 'php',
+        coin : 1
     },
     {
         id: 2,
-        name: 'javascript ',
-        coin : 333 
+        name: 'javascript',
+        coin : 2
     },
     {
         id: 3,
-        name: 'html,css ',
-        coin : 222
+        name: 'html,css',
+        coin : 10
     }, {
         id: 4,
         name: 'reactJs',
-        coin : 5000 
+        coin : 4
     }, {
         id: 5,
-        name: 'Ruby ',
-        coin : 400 
+        name: 'Ruby',
+        coin : 9
     },
 ];
+// forEach
+// courses.forEach(function(courses,index ){
+//         console.log(index,courses);
+// });
 
-courses.forEach(function(courses){
-        console.log(courses);
+// every 
+// var isFree = courses.every(function(courses,index){
+//     // console.log(index)
+//     return courses.coin === 0 ;
+// });
+// console.log(isFree);
+
+// some
+// var isFree = courses.some(function(courses, index){
+//     console.log(index);
+//     return courses.coin ===0 ;
+// });
+// console.log(isFree);
+
+
+//find
+var course = courses.find(function(course, index){
+    return course.name === 'javascript'; 
 });
+ 
+console.log(course);
