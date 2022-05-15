@@ -1,60 +1,51 @@
-// Array methods;
-// forEach()
-// evary()
-// some()
-// find()
-// filter()
-// map()
-// reduce ()
 
-var courses = [
-    {
-        id: 1,
-        name: 'php',
-        coin : 1
-    },
-    {
-        id: 2,
-        name: 'javascript',
-        coin : 2
-    },
-    {
-        id: 3,
-        name: 'html,css',
-        coin : 10
-    }, {
-        id: 4,
-        name: 'reactJs',
-        coin : 4
-    }, {
-        id: 5,
-        name: 'Ruby',
-        coin : 9
-    },
-];
-// forEach
-// courses.forEach(function(courses,index ){
-//         console.log(index,courses);
-// });
+// toán tử số học  arithmetic 
+// toans tử gán - assignment 
+// toán tử so sánh  - comparison
+//toán tử logic -  ligical 
 
-// every 
-// var isFree = courses.every(function(courses,index){
-//     // console.log(index)
-//     return courses.coin === 0 ;
-// });
-// console.log(isFree);
-
-// some
-// var isFree = courses.some(function(courses, index){
-//     console.log(index);
-//     return courses.coin ===0 ;
-// });
-// console.log(isFree);
-
-
-//find
-var course = courses.find(function(course, index){
-    return course.name === 'javascript'; 
-});
+// var a = 1  ; 
+// var b = 2 ; 
+// if (a> 0 && b> 1){
+//     alert ( 'dung'  );
+// }
  
-console.log(course);
+
+
+// toán tử số học  
+// +  --> cộng 
+// - --> trừ 
+// * -->nhân
+// ** --> lũy thừa 
+// / --> chia 
+// % --> chia lấy số dư
+// ++ --> tăng một giá trị của số 
+// -- --> giảm một giá trị của số 
+
+
+// var a =  5 ; 
+// var b = 2 ; 
+
+// var c  = a ++ b ;
+// console.log(c);
+
+
+// tăng lên một giá trị của số 
+
+// var a = 10 
+
+// a -- ;
+// console.log(a)
+
+
+// toán tử nối chuỗi 
+
+// var firstName = 'giang';
+// firstName += 'gia';
+// console.log (firstName );
+
+
+
+
+// toán tử so sánh 
+
