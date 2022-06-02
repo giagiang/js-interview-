@@ -166,3 +166,136 @@
 
 
 
+// function giangday(){
+//    alert('liêm luônn'); 
+// }
+// giangday();
+
+
+
+
+
+// tham số hàm cơ vản trong javascript
+// 1 tham số ?
+// - định nghĩa ? 
+// - kiểu dữ liệu ?
+// - tính private?
+// - 1 tham số ??
+// - nhiều tham số ? 
+
+// 2. truyền tham số 
+// - 1 tham số 
+// - nhiều tham số 
+
+// 3 Arguments?
+// - đối tượng arguments
+// - giới thiệu vòng for 
+
+
+// function writeLog ( massage ){
+//     console.log(typeof massage)
+// }
+// writeLog (123)
+// có thể truyền mọi kiểu dữ liệu miễn sao đúng cú pháp
+
+
+// function writeLog ( message , mesages2){
+  
+//     if ( message){
+//         console.log(message)
+//     }
+//     if ( mesages2){
+//         console.log(mesages2)
+//     } 
+// }
+// writeLog ('test2');
+
+
+// 3 arguments and for of 
+
+
+// function writeLog() {
+//     var myString = '';
+//     for ( var  giang of arguments){
+//         myString += `${giang} +`
+//     }
+//     console.log(myString)
+// }
+// writeLog('giaignangas', 'gasnasd', 'sfsafsa','asdasdasd')
+
+
+// hàm return
+
+// function cong (a,b){
+//     return(a+b);
+// }
+// var result  = cong(3,4);
+// console.log(result)
+
+
+// toString hàm chuyển đổi từ hàm thành chuỗi 
+// function cong ( a,b){
+//     return a.toString() + b.toString();
+
+// }
+// var result  = cong (5,6);
+// console.log(result)
+
+
+
+
+
+
+// một số điều kiện của function 
+// 1. khi function trung tên 
+
+// function showMessage(){
+//     console.log('message 1');
+// }
+
+// function showMessage(){
+//     console.log('message 2');
+// }
+
+// showMessage();
+// khi định nghĩa ra hai function trùng tên thì cái function định nghĩa sau thì nó sẽ ghi đè lên function trước 
+
+// 2 khai báo biến trong hàm 
+
+// function showMessage(){
+//      var int = 50 ;
+//      console.log(int);
+// }
+// showMessage();
+// 3. định nghĩa trong hàm ?
+
+
+// function showMessage(){
+//     function showMessage2(){
+//         function showMessage3(){
+//             console.log("ddsadasd");
+//         }
+//         showMessage3();
+//     }
+//     showMessage2();
+// }
+// showMessage();
+
+
+
+// các loại function 
+//  1. declaration  function 
+// 2. expression function
+// 3. arrow function    
+
+showMessage2();
+
+function showMessage () {
+    console.log("declaration function" );
+}
+
+var showMessage2 = function (){
+        console.log("expression function");
+}
+// declaration function có thể được gọi trước khi được định nghĩa 
+//expresstion Function không được hosting không thể gọi được trước khi được định nghĩa 
