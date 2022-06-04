@@ -288,14 +288,83 @@
 // 2. expression function
 // 3. arrow function    
 
-showMessage2();
+// showMessage2();
 
-function showMessage () {
-    console.log("declaration function" );
-}
+// function showMessage () {
+//     console.log("declaration function" );
+// }
 
-var showMessage2 = function (){
-        console.log("expression function");
-}
+// var showMessage2 = function (){
+//         console.log("expression function");
+// }
 // declaration function có thể được gọi trước khi được định nghĩa 
 //expresstion Function không được hosting không thể gọi được trước khi được định nghĩa 
+
+
+
+// String chuỗi tron js
+// 1 tạo chuỗi 
+// - cách tạo chuỗi 
+//  var fullName = 'cách tạo chuỗi';
+//  var fullName = new String ('cách tạo chuỗi 2');
+//  console.log(typeof fullName);
+// - nên dùng cách nào ? lý do ?
+// - kiểm tra datatype 
+// 2 một số case sử dụng backlish (\)
+
+// var fullName =  'case backlish trong \'javascript\'';
+// var fullName =  'day la backlish \\';
+// console.log(fullName);
+
+// 3 xem độ dài chuỗi 
+
+// var fullname = 'giagiang';
+// console.log(fullname.length);
+// 4 chú ý độ dài khi viết code 
+// var fullName= " một số  case sử dụng backlish"
+// + "1. một số case sử dụng backlish" ;
+// +"2. một số case sử dụng backlish ";
+// + "3. một số case sử dụng backlish ";
+// console.log(fullName.length);
+
+// 5 template string ES6 
+// var firstName= 'gia';
+// var  lastname= 'giang';
+// console.log(`tôi là : ${firstName} ${lastname}`); 
+
+
+// làm việc với chuỗi 
+// 1 length 
+
+// var string = "       độ dài là của văn bản của tôi là bao nhiêu JS      ";
+// console.log(string.length);
+// 2 find  index 
+// console.log(string.indexOf('là',10));
+// console.log(string.lastIndexOf('là'));
+// console.log(string.search("là")); dùng search sẽ tìm kiếm là kí tự được xuất hiện đầu tiên 
+//search không hỗ trợ biểu thức thứ hai khi chúng ta nhấp ('là')
+// 3 cut string
+// console.log("chuỗi tôi muốn cắt là: " + string.slice(5,43 ));
+// console.log("tôi sẽ chuyền chuỗi số âm và cắt từ cuối lên :" + string.slice(-30,-1 ));
+// console.log("tôi sẽ chuyền vào một tham số thì nó sẽ cắt từ vị trí đó tới cuối :"+ string.slice(12))
+// 4 replace 
+// console.log("chuỗi mà tôi muốn thay thế là "+ string.replace("là", "javascript"));
+// console.log("chuỗi mà tôi muốn thay thế là "+ string.replace(/là/g, "javascript"));dùng biểu thức chính quy ta /là/g, tên hàm thay thế 
+
+// 5 convert touppercase 
+// console.log("hàm này để in hoa các chữ cái bên trong chuỗi:" + string.toUpperCase());
+// 6 convert to lower case  
+// console.log("hàm này sẽ trả về chuỗi tring in thường: " + string.toLowerCase());
+// 7 trim 
+// console.log("tôi sẽ thực hiện xóa khoảng trắng dư thừa trong chuỗi trên :" + string.trim().length);
+// 8 split 
+// var language  = "javascript, ruby, typeScript, PHP";
+// console.log( language.split(", "))"tôi sẽ chia một chuỗi thành một mảng con: "
+// 9 get a character  by index 
+const string = 'gia giang' ;
+console.log(string.charAt(1))
+
+
+
+
+
