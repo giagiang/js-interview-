@@ -165,4 +165,129 @@
 // 4 tạo hàm đầu tiên 
 
 
+// mảng trong javascript - array 
 
+// 1 tạo mangt 
+//  - cách tạo 
+//  - sử dụng cách nào ? taị sao ? 
+//  - kiểm tra data type 
+//  2 truy vấn mảng 
+//  - độ dài mảng 
+//  - lấy phần tử theo index 
+
+// var language  = [
+//    'javascript',
+//    'PhP',
+//    'Ruby',
+//    'dart',
+//    null , 
+//    undefined, 
+//    function(){
+
+//    },
+//    {},
+//    123
+// ];
+// console.log(language);
+
+
+
+//cách tạo thứ hai của một array 
+
+// var language = new Array();
+// var language  = [
+//    'javascript',
+//    'PhP',
+//    'Ruby',
+//    'dart',
+//    null , 
+//    undefined, 
+//    function(){
+
+//    },
+//    {},
+//    123
+// ];
+
+// console.log(Array.isArray({}))
+
+// kiểm tra kiểu dữ liệu data type ?
+//kiểm tra bình thường chúng ta sử dụng typeof[]
+
+
+
+// làm việc với Array 
+
+// 1. to String 
+
+// var language = [
+//    'javascript ',
+//    'PHP', 
+//    'Ruby'
+// ];
+// console.log(language.toString()) 
+// phương thức này chuyển đổi mảng thành một chuỗi 
+
+// 2. Join
+// console.log(language.join(' - ')) 
+// Hãy chọn mệnh đề đúng trong các mệnh đề sau?
+
+// 3. pop 
+// console.log(language.pop())
+// xóa element cuối mảng và trả về phần tử đã xóa 
+// console.log(language);  
+
+// 4. push 
+// console.log(language.push('java'))
+// console.log(language)
+// thêm phần tử vào cuối mảng  
+// 5. shift 
+// console.log(language.shift())
+ //xóa phần tử ở đầu mảng 
+// console.log(language)
+// 6. Unshift 
+// console.log(language.unshift())
+//thêm các phần tử mới vào đầu mảng  và tính tổng các phần tử trong mảng 
+// console.log(language)
+// 7. splicing 
+// language.splice(1,0,'dart')
+// console.log(language);
+// 8. Concat  
+
+// var language2 = [ 
+//    'dart', 
+//    'Ruby'
+// ];
+// console.log(language.concat(language2))
+// gộp nhiều mảng lại thành một mảng mà không làm thau đổi mảng ban đầu 
+
+// 9. splicing
+// console.log(language.slice(1,2))
+// phương thức này dùng để cắt một vài elêmnt của mảng 
+
+
+
+// const grades = [10, 14, 15]; // array (plural)
+// grades.forEach(function(grade) { // array item (singular)
+//     console.log(grade);
+// });
+
+
+// let numbers = [9, 5, 14, 3, 11];
+
+// let numbersAboveTen = numbers.filter(function(number) {
+//     return number >= 10;
+// });
+// console.log(numbersAboveTen); 
+
+// let number = [2,3,4,5,6];
+// let double = number.map(function(numbe){
+//     return numbe * 2 ; 
+// })
+// console.log(double);
+
+let names = [1,2,3,4,]
+let uppername = names.map(function(name){
+    return name = name * 2  ;
+})
+console.log(uppername);
